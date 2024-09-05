@@ -8,23 +8,29 @@
     <title>To Do List</title>
 </head>
 <body class="bg-[url('images/image.png')] bg-no-repeat bg-cover min-h-screen flex items-center justify-center">
-    <div class="w-full max-w-md mx-auto bg-white rounded-lg shadow-lg shadow-sky-600 p-8">
-        <h1 class="text-2xl md:text-3xl font-bold text-center mb-6">To-Do List</h1>
 
+  
+<!-- this is needed -->
+    <div class="w-full max-w-md mx-auto bg-white rounded-lg shadow-lg p-8">
+        <h1 class="text-2xl md:text-3xl font-bold text-center mb-6">To-Do List</h1>
         <form id="todo-form" class="flex flex-col space-y-4">
-            <input id="todo-input" type="text" placeholder="Enter a task" class="p-2 border border-gray-300 text-gray-800 rounded  focus:outline-none focus:ring focus:ring-sky-300">
-            <input id="date-input" type="date" placeholder="Enter Date" class="p-2 border border-gray-300 rounded text-gray-800 focus:outline-none focus:ring focus:ring-sky-300" >
-            <input id="time-input" type="time" placeholder="Enter Time" class="p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-sky-300">
+            <input id="todo-input" type="text" placeholder="Enter a task" class="p-2 border border-gray-300 text-gray-800 rounded focus:outline-none focus:ring focus:ring-sky-300">
             <button type="submit" class="bg-sky-700 text-white px-4 py-2 rounded-lg hover:bg-sky-600 transition duration-300">
                 Add Task
             </button>
         </form>
-
         <ul id="todo-list" class="mt-6 space-y-4">
-            <!-- Tasks will be added here -->
+    
         </ul>
-    </div>
-  
+        <button id="clear-all" class="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition duration-300 mt-5">
+            Clear All
+        </button>
+    </div> 
+
+
+
+
     <script src="script.js"></script>
+     
 </body>
 </html>
